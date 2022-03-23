@@ -4,17 +4,17 @@ numero_aleatorio = random.randrange(101)
 gane = False
 print("Tenés 5 intentos para adivinar un entre 0 y 100")
 intento = 1
-while intento < 5 and not gane:
-    numeroIngresado = int(input('Ingresa tu número: '))
-    if numeroIngresado == numero_aleatorio:
-        print('Ganaste! y necesitaste {} intentos!!!'.format(intento))
+while intento < 6 and not gane:
+    numero_Ingresado = int(input('Ingresa tu número: '))
+    if numero_Ingresado == numero_aleatorio:
+        print(f'Ganaste! y necesitaste {intento} intentos!!!')
         gane = True
     else:
         print('Mmmm ... No.. ese número no es... Seguí intentando.')
         intento += 1
-numeroIngresado = int(input('Ingresa tu número: '))
-if numeroIngresado == numero_aleatorio:
-    print('Ganaste! y necesitaste {} intentos!!!'.format(intento))
+numero_Ingresado = int(input('Ingresa tu número: '))
+if numero_Ingresado == numero_aleatorio:
+    print(f'Ganaste! y necesitaste {intento} intentos!!!')
     gane = True
 else:
-    print('\n Perdiste :(\n El número era: {}'.format(numero_aleatorio))
+    print(f'\n Perdiste :(\n El número era: {numero_aleatorio}')
